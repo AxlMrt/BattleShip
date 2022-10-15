@@ -1,0 +1,1 @@
+(()=>{const o=document.querySelector(".content");console.log(o)})();
