@@ -1,17 +1,21 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable import/prefer-default-export */
-export function Ship(length) {
+export function Ship(name, length) {
   let health = length;
-  let isDrown = false;
+  let isSunk = false;
 
-  const drown = () => {
-    isDrown = true;
-    return isDrown;
+  const sunk = () => {
+    isSunk = true;
+    return isSunk;
   };
 
-  const dmg = (x = 1) => {
+  // eslint-disable-next-line consistent-return
+  const hit = (x = 1) => {
     health -= x;
-    if (health <= 0) return drown();
+    if (health <= 0) return sunk();
   };
 
-  return { length, health, isDrown };
+  return {
+    name, length, health, isSunk,
+  };
 }

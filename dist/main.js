@@ -1,1 +1,1 @@
-(()=>{const o=document.querySelector(".content");console.log(o)})();
+(()=>{"use strict";const o=10,t=function(t){const r=[];return(o=>{for(let t=0;t<o;t+=1){const e=[];for(let r=0;r<o;r+=1)e.push({hit:!1,empty:!0,coordinates:[t,r]});r.push(e)}})(o),{boardArr:r}}();console.log(t.boardArr);const r=document.querySelector(".content");console.log(r)})();

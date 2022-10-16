@@ -2,9 +2,13 @@
 import { Ship } from './battleship.factory';
 
 test('Create a ship object', () => {
-  expect(Ship(5)).toEqual({ length: 5, health: 5, isDrown: false });
+  expect(Ship('Carrier', 5)).toEqual({
+    name: 'Carrier', length: 5, health: 5, isSunk: false,
+  });
 });
 
 test('Create a ship object', () => {
-  expect(Ship(2)).toEqual({ length: 2, health: 2, isDrown: false });
+  expect(Ship('Destroyer', 2)).toEqual({
+    name: 'Destroyer', length: 2, health: 2, isSunk: false,
+  });
 });
